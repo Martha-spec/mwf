@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram Login Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    header {
+      color: white;
+      padding: 1.5px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffae00;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      margin-bottom: 6px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-links li a {
+      color: white;
+      font-weight: 500;
+      text-decoration: none;
+      background-color: #1f2937;
+      padding: 0.5rem 1px;
+      border-radius: 0.375px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      background-color: #374151;
+    }
+
+    .instagram-gradient {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0; }
+      10%, 90% { opacity: 1; }
+    }
+
+    .animate-fadeIn {
+      animation: fadeInOut 16s infinite;
+    }
+
+    .animate-fadeIn:nth-child(2) { animation-delay: 4s; }
+    .animate-fadeIn:nth-child(3) { animation-delay: 8s; }
+    .animate-fadeIn:nth-child(4) { animation-delay: 12s; }
+
+    body {
+      background: url('image 100.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col items-center justify-start p-4">
+  
+  <header>
+    <h1>WELCOME TO MAYONDO WOOD AND FURNITURE COMPANY</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Dashboard.html">Dashboard</a></li>
+        <li><a href="Index.html">Add Stock</a></li>
+        <li><a href="Sale.html">Sales</a></li>
+        <li><a href="Add-sales.html">Add Sales</a></li>
+        <li><a href="Stock.html">Stock</a></li>
+        <li><a href="Index.html" class="logout-btn"> Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl space-y-6 lg:space-y-0 lg:space-x-10">
+    <div class="hidden lg:flex items-center justify-center">
+      <div class="relative w-[250px] h-[538px] bg-[url('https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png')] bg-no-repeat bg-contain">
+        <div class="absolute top-[26px] left-[53px] w-[160px] h-[352px] overflow-hidden rounded-md">
+          <div class="w-full h-full relative">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot1.jpg/d6bf0c928b5a.jpg" class="w-full h-full object-cover absolute animate-fadeIn">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot2.jpg/6f03eb85463c.jpg" class="w-full h-full object-cover absolute animate-fadeIn">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot3.jpg/9bd2a7b00b5a.jpg" class="w-full h-full object-cover absolute animate-fadeIn">
+            <img src="https://www.instagram.com/static/images/homepage/screenshot4.jpg/842fe5699220.jpg" class="w-full h-full object-cover absolute animate-fadeIn">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-md w-full space-y-4">
+      <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+        <div class="flex justify-center mb-6">
+          <div class="text-3xl font-bold instagram-gradient"></div>
+        </div>
+
+        <form class="mt-4 space-y-6" action="Dashboard.html" method="GET">
+          <div class="space-y-4">
+            <input id="username" name="username" type="text" autocomplete="username" required
+              class="appearance-none w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 sm:text-sm"
+              placeholder="Phone number, username, or email">
+            <input id="password" name="password" type="password" autocomplete="current-password" required
+              class="appearance-none w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 sm:text-sm"
+              placeholder="Password">
+          </div>
+
+          <button type="submit"
+            class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
+            Log In
+          </button>
+
+          <div class="flex items-center my-3">
+            <div class="flex-grow border-t border-gray-300"></div>
+            <span class="mx-4 text-gray-500 text-sm font-medium">OR</span>
+            <div class="flex-grow border-t border-gray-300"></div>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="text-blue-900 text-sm font-semibold">
+              <i class="fab fa-facebook-square mr-1"></i> Log in with Facebook
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a href="#" class="text-xs text-blue-500">Forgot password?</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 text-center">
+        <p class="text-sm text-gray-700">Don't have an account? <a href="#" class="text-blue-500 font-semibold">Sign up</a></p>
+      </div>
+
+      <div class="text-center">
+        <p class="text-sm mb-2">Get the app.</p>
+        <div class="flex justify-center space-x-2">
+          <a href="#" class="w-32">
+            <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/180ae7a0bcf7.png"
+              alt="Download on the App Store" class="h-10">
+          </a>
+          <a href="#" class="w-32">
+            <img src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/e9cd846dc748.png"
+              alt="Get it on Google Play" class="h-10">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+

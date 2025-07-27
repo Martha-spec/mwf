@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CURRENT STOCK TABLE - MAYONDO WOOD & FURNITURE</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url(wooden-podium-with-green-moss-natural-organic_1190955-864.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 40px 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      background-color: #1f2937;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-links li a:hover {
+      background-color: #374151;
+    }
+
+    .table-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 100%;
+      overflow-x: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f0f0ff;
+      color: #333;
+      font-weight: bold;
+    }
+
+    tbody tr:hover {
+      background-color: #f9f9ff;
+    }
+
+    .add-stock-btn {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #2563eb;
+      color: white;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-stock-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    @media (max-width: 768px) {
+      table, th, td {
+        font-size: 12px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CURRENT STOCK TABLE</h1>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="Index.html">Dashboard</a></li>
+      <li><a href="Dashboard.html">Add Stock</a></li>
+      <li><a href="Sale.html">Sales</a></li>
+      <li><a href="Add-sales.html">Add Sales</a></li>
+      <li><a href="Stock.html">Stock</a></li>
+      <li><a href="Index.html" class="logout-btn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          <th>PRODUCT NAME</th>
+          <th>TYPE</th>
+          <th>SUPPLIERS</th>
+          <th>COST PRICE (UGX)</th>
+          <th>SELLING PRICE (UGX)</th>
+          <th>QUANTITY</th>
+          <th>DATE</th>
+          <th>QUALITY</th>
+          <th>COLOR</th>
+          <th>MEASUREMENTS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mahogany Timber</td>
+          <td>Wood</td>
+          <td>Kayunga Suppliers</td>
+          <td>150,000</td>
+          <td>200,000</td>
+          <td>50</td>
+          <td>2025-07-20</td>
+          <td>Grade A</td>
+          <td>Brown</td>
+          <td>10ft</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>4x6 Bed</td>
+          <td>Furniture</td>
+          <td>Jinja Furniture Mart</td>
+          <td>250,000</td>
+          <td>320,000</td>
+          <td>15</td>
+          <td>2025-07-22</td>
+          <td>High</td>
+          <td>Dark</td>
+          <td>4x6 ft</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <a href="Add-stock.html" class="add-stock-btn">Add New Stock</a>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Records - MUYONDO WOOD AND FURNITURE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-image: url('beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267(1).jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .backdrop {
+      background-color: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(2px);
+      padding: 2px;
+      border-radius: 0.75px;
+      margin-top: 2px;
+    }
+
+    nav {
+      margin-bottom: 1.5px;
+      text-align: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      background-color: #1e3a8a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: 500;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: #374151;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 min-h-screen flex flex-col items-center justify-center px-4">
+
+  <div class="w-full max-w-6xl backdrop shadow-lg">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-10">
+      SALES RECORD - MUYONDO WOOD & FURNITURE
+    </h1>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="Index.html">Dashboard</a></li>
+        <li><a href="Dashboard.html">Add Stock</a></li>
+        <li><a href="Sale.html">Sales</a></li>
+        <li><a href="Add-sales.html">Add Sales</a></li>
+        <li><a href="Stock.html">Stock</a></li>
+      </ul>
+    </nav>
+
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+      <table class="min-w-full text-sm table-auto border border-gray-300 rounded-md bg-sky-100">
+        <thead class="bg-sky-600 text-white uppercase text-xs">
+          <tr>
+            <th class="px-4 py-3 text-left border"></th>
+            <th class="px-4 py-3 text-left border">PRODUCT NAME</th>
+            <th class="px-4 py-3 text-left border">TYPE</th>
+            <th class="px-4 py-3 text-left border">CUSTOMER NAME</th>
+            <th class="px-4 py-3 text-left border">SELLING PRICE</th>
+            <th class="px-4 py-3 text-left border">Quantity</th>
+            <th class="px-4 py-3 text-left border">TOTAL</th>
+            <th class="px-4 py-3 text-left border">DATE</th>
+            <th class="px-4 py-3 text-left border">PAYMENT METHOD</th>
+          </tr>
+        </thead>
+        <tbody class="text-gray-800">
+          <tr class="hover:bg-sky-200">
+            <td class="px-4 py-3 border">1</td>
+            <td class="px-4 py-3 border">Mahogany Table</td>
+            <td class="px-4 py-3 border">Furniture</td>
+            <td class="px-4 py-3 border">John Doe</td>
+            <td class="px-4 py-3 border">UGX 250,000</td>
+            <td class="px-4 py-3 border">1</td>
+            <td class="px-4 py-3 border">UGX 250,000</td>
+            <td class="px-4 py-3 border">2025-07-25</td>
+            <td class="px-4 py-3 border">Mobile Money</td>
+          </tr>
+          <tr class="hover:bg-sky-200">
+            <td class="px-4 py-3 border">2</td>
+            <td class="px-4 py-3 border">4x6 Bed</td>
+            <td class="px-4 py-3 border">Furniture</td>
+            <td class="px-4 py-3 border">Jane Smith</td>
+            <td class="px-4 py-3 border">UGX 320,000</td>
+            <td class="px-4 py-3 border">2</td>
+            <td class="px-4 py-3 border">UGX 640,000</td>
+            <td class="px-4 py-3 border">2025-07-24</td>
+            <td class="px-4 py-3 border">Cash</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="mt-6 text-center">
+      <a href="add-sales.html" class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+        + Add New Sale
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
