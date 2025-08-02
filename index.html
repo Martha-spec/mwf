@@ -9,16 +9,16 @@
   <style>
     header {
       color: white;
-      padding: 1.5px 0;
+      padding: 10px;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2rem;
+      font-size: 24px;
       font-weight: 700;
       color: #ffae00;
-      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-      margin-bottom: 6px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+      margin-bottom: 10px;
     }
 
     .nav-links {
@@ -72,19 +72,8 @@
 </head>
 
 <body class="bg-gray-50 min-h-screen flex flex-col items-center justify-start p-4">
-  
   <header>
     <h1>WELCOME TO MAYONDO WOOD AND FURNITURE COMPANY</h1>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="Dashboard.html">Dashboard</a></li>
-        <li><a href="Index.html">Add Stock</a></li>
-        <li><a href="Sale.html">Sales</a></li>
-        <li><a href="Add-sales.html">Add Sales</a></li>
-        <li><a href="Stock.html">Stock</a></li>
-        <li><a href="Index.html" class="logout-btn"> Logout</a></li>
-      </ul>
-    </nav>
   </header>
 
   <div class="flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl space-y-6 lg:space-y-0 lg:space-x-10">
@@ -109,10 +98,10 @@
 
         <form class="mt-4 space-y-6" action="Dashboard.html" method="GET">
           <div class="space-y-4">
-            <input id="username" name="username" type="text" autocomplete="username" required
+            <input id="username" name="username" type="text" autocomplete="username" 
               class="appearance-none w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 sm:text-sm"
               placeholder="Phone number, username, or email">
-            <input id="password" name="password" type="password" autocomplete="current-password" required
+            <input id="password" name="password" type="password" autocomplete="current-password" 
               class="appearance-none w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400 focus:border-gray-400 sm:text-sm"
               placeholder="Password">
           </div>
